@@ -197,7 +197,7 @@ rfm_summary['Avg_Recency'] = rfm_summary['Avg_Recency'].round(1)
 rfm_summary['Avg_Frequency'] = rfm_summary['Avg_Frequency'].round(2)
 rfm_summary['Avg_Monetary'] = rfm_summary['Avg_Monetary'].apply(lambda x: f'R$ {x:,.2f}')
 
-st.dataframe(rfm_summary, width=None)
+st.dataframe(rfm_summary)
 
 st.markdown("---")
 
